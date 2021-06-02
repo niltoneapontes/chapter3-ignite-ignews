@@ -1,7 +1,8 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export default (request: NextApiRequest, response: NextApiResponse) => {
-  const userId = request.query.id
+  console.log(request.query);
+  
   const users = [
     { id: 1, name: 'Nilton'},
     { id: 2, name: 'Tairine'},
